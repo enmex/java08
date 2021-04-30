@@ -1,7 +1,7 @@
 package test;
 import java.io.Serializable;
 import java.util.Objects;
-public class Human extends BaseHuman {
+public class Human extends BaseHuman implements Executable {
     private String name;
     private String surname;
     private String middleName;
@@ -48,5 +48,11 @@ public class Human extends BaseHuman {
     @Override
     public int hashCode() {
         return Objects.hash(name, surname, middleName, birthDate);
+    }
+
+    @Override
+    public void execute()
+    {
+        System.out.println("Ура!");
     }
 }

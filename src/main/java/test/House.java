@@ -39,6 +39,7 @@ public class House {
     }
 
     public ArrayList<Flat> getFlats() {
+
         return flats;
     }
 
@@ -51,6 +52,7 @@ public class House {
                 ", flats=" + flats +
                 '}';
     }
+
 
     @Override
     public boolean equals(Object o) {

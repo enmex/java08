@@ -2,7 +2,7 @@ package test;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Objects;
-public class Flat implements Serializable {
+public class Flat extends Human {
     private ArrayList<Human> personList;
     private int square;
     private int number;
@@ -65,4 +65,5 @@ public class Flat implements Serializable {
     public int hashCode() {
         return Objects.hash(personList, square, number);
     }
+
 }
